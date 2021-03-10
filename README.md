@@ -29,6 +29,14 @@ LocationManager.manager.checkLocation(successCallback: { success in
 
 ```
 
+You can access the location data from anywhere in your project
+
+```swift
+
+print("Latitude: \(LocationManager.latitude)", "Longitude: \(LocationManager.longitude)")
+
+```
+
 After the manager succedded in finding the location of the device, it will fire a Notification, if you want to do some stuff after the location is calculated you can use this notification as follows:
 
 First add the observer on your desired location
